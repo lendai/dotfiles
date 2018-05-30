@@ -7,19 +7,15 @@ brew update
 brew upgrade
 
 ## Install cask
-brew install caskroom/cask/brew-cask
+brew tap homebrew/cask
 
 ## Completions
 brew tap homebrew/completions
 brew install bash-completion
 
 ## Utils
-brew install autoconf
-brew install automake
-brew install ctags
 brew install curl
 brew install libyaml
-brew install openssl
 brew install tmux
 brew install tree
 brew install unrar
@@ -35,6 +31,7 @@ brew install nmap
 brew install reaver
 brew install tcpdump
 brew install wireshark
+brew cask install wireshark
 
 ## Software development
 brew install visual-studio-code
