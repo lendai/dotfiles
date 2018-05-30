@@ -7,18 +7,7 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until `.osx` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-name = 'Daniel Mauno Pettersson'
-email = 'daniel@mauno.io'
-
 dotfilesDir=$(pwd)
-
-# Link the JavaScript Console to PATH
-# ln /System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc /usr/local/bin
-
-# Set your name and e-mail in the .gitconfig
-sed -i.bak 's/NAME/${name}/g' .gitconfig
-sed -i.bak 's/EMAIL/${email}/g' .gitconfig
-rm -f .gitconfig.bak
 
 dotfiles=".bashrc .bash_profile .gitconfig .gitignore"
 
@@ -67,7 +56,7 @@ else
     echo "No ssh keypair found in .ssh/id_rsa"
     echo "To generate a new one:"
     echo "mkd ~/.ssh"
-    echo "ssh-keygen -b 2048 -t rsa -f id_rsa -P \"\" -C \"${email}\""
+    echo "ssh-keygen -b 2048 -t rsa -f id_rsa -P \"\" -C \"your-email@exmaple.com\""
     echo "la ~/.ssh"
 fi
 

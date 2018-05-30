@@ -50,4 +50,4 @@ export BOLD
 export RESET
 
 ## PROMPT
-PS1="\[${BOLD}${WHITE}\]\u@\[${RESET}${RED}\]\h:\[${BLUE}\]\W\[${PURPLE}\]\$(__git_ps1)\[${RESET}\]$ "
+PS1="\[${BOLD}${WHITE}\]\u@\[${RESET}${RED}\]\h:\[${BLUE}\]\W\[${PURPLE}\]\[${RESET}\]$ "

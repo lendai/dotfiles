@@ -34,7 +34,7 @@ brew install wireshark
 brew cask install wireshark
 
 ## Software development
-brew install visual-studio-code
+brew cask install visual-studio-code
 
 ## Chat
 brew cask install slack
@@ -44,7 +44,7 @@ brew cask install spotify
 brew cask install vlc
 
 ## Virtualization
-brew install docker-toolbox
+brew install homebrew/cask/docker-toolbox
 
 ## Other
 brew cask install transmission
