@@ -38,6 +38,7 @@ brew cask install visual-studio-code
 
 ## Chat
 brew cask install slack
+brew cask install telegram
 
 ## Entertainment
 brew cask install spotify
