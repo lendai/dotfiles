@@ -44,6 +44,9 @@ brew doctor
 echo "Installing tools and application with brew"
 source ${dotfilesDir}/Brewfile.sh
 
+echo "Installing tools and application with npm"
+source ${dotfilesDir}/npm.sh
+
 ## Reload bash
 echo "Reloading bash shell with new environment"
 source ~/.bashrc
