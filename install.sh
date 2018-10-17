@@ -76,3 +76,6 @@ echo "Updating some macos settings, this requires sudo password"
 
 # Install all recommended software updates
 softwareupdate --install --recommended
+
+# Open instructions for everything that's not installable by command line in a good way
+~/dotfiles/.open-in-browser
