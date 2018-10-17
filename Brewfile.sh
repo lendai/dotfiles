@@ -10,7 +10,6 @@ brew upgrade
 brew tap homebrew/cask
 
 ## Completions
-brew tap homebrew/completions
 brew install bash-completion
 
 ## Utils
