@@ -74,6 +74,9 @@ chmod +x ~/dotfiles/.macos
 echo "Updating some macos settings, this requires sudo password"
 ~/dotfiles/.macos
 
+# Install node dev environment
+~/dotfiles/.node
+
 # Install all recommended software updates
 softwareupdate --install --recommended
 
