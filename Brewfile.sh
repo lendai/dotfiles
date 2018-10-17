@@ -35,6 +35,9 @@ brew cask install wireshark
 ## Software development
 brew cask install visual-studio-code
 brew cask install postico
+brew cask install graphql-playground
+brew cask install sketch
+brew cask install abstract
 
 ## Chat
 brew cask install slack
