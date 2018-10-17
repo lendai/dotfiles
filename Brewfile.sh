@@ -51,9 +51,6 @@ brew install homebrew/cask/docker-toolbox
 brew cask install transmission
 brew cask install caffeine
 
-## If it exists as an .app, link it to /Users/<you>/Applications
-brew linkapps --local
-
 ## Remove outdated versions
 brew cleanup
 brew cask cleanup
