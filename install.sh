@@ -4,7 +4,7 @@
 echo "This requires sudo privilegies"
 sudo -v
 
-# Keep-alive: update existing `sudo` time stamp until `.osx` has finished
+# Keep-alive: update existing `sudo` time stamp until `.macos` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 dotfilesDir=$(pwd)
@@ -69,10 +69,10 @@ execdir=$(pwd)
 echo "Enabling FileVault encryption"
 sudo fdesetup enable
 
-## Make .osx executable and run
-chmod +x ~/dotfiles/.osx
-echo "Updating some OSX settings, this requires sudo password"
-~/dotfiles/.osx
+## Make .macos executable and run
+chmod +x ~/dotfiles/.macos
+echo "Updating some macos settings, this requires sudo password"
+~/dotfiles/.macos
 
 # Install all recommended software updates
 softwareupdate --install --recommended
