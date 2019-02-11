@@ -62,10 +62,6 @@ fi
 
 execdir=$(pwd)
 
-## Enable FileVault encryption
-echo "Enabling FileVault encryption"
-sudo fdesetup enable
-
 ## Make .macos executable and run
 chmod +x ~/dotfiles/.macos
 echo "Updating some macos settings, this requires sudo password"
@@ -79,3 +75,7 @@ softwareupdate --install --recommended
 
 # Open instructions for everything that's not installable by command line in a good way
 ~/dotfiles/.open-in-browser
+
+## Enable FileVault encryption
+echo "Enabling FileVault encryption"
+sudo fdesetup enable

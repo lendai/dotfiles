@@ -13,4 +13,3 @@ This will;
 * Setup the terminal
 * Set a bunch of default values for macos
 * Install the applications i use often
-s
