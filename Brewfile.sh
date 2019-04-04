@@ -22,6 +22,7 @@ brew install watch
 brew install wget
 brew install xz
 brew install jq
+brew install pwgen
 
 # Network utils
 brew install ettercap
