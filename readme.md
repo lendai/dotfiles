@@ -7,6 +7,8 @@ cd
 git clone git@bitbucket.org:lendai/dotfiles.git
 cd dotfiles
 ./install.sh
+
+open ~/dotfiles/.gitconfig
 ```
 
 This will;
