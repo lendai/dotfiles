@@ -4,7 +4,7 @@ Easily setup a new mac.
 
 ```sh
 cd 
-git clone git@bitbucket.org:lendai/dotfiles.git
+git clone git@github.com:lendai/dotfiles.git
 cd dotfiles
 ./install.sh
 
