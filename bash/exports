@@ -1,4 +1,4 @@
-## make vim default editor
+## set default editor
 export EDITOR=code
 export GIT_EDITOR=code
 
