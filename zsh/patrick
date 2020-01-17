@@ -1,0 +1,1 @@
+alias pid3000='sudo lsof -i tcp:3000'

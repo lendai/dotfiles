@@ -57,4 +57,3 @@ brew cask install caffeine
 
 ## Remove outdated versions
 brew cleanup
-brew cask cleanup

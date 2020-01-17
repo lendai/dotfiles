@@ -7,11 +7,9 @@ cd
 git clone git@github.com:lendai/dotfiles.git
 cd dotfiles
 ./install.sh
-
-open ~/dotfiles/.gitconfig
 ```
 
 This will;
 * Setup the terminal
-* Set a bunch of default values for macos
-* Install the applications i use often
+* Set a bunch of default values for MacOS
+* Install the applications I use often
