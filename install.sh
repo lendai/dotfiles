@@ -34,12 +34,7 @@ fi
 ## Make sure homebrew exists, otherwise install it
 if [ ! -e /usr/local/bin/brew ]
 then
-    echo "chmod 775 /usr/local for Homebrew"
-    sudo chmod 775 /usr/local
-    echo "chmod 775 /usr/local/include for Homebrew"
-    sudo chmod 775 /usr/local/include
-    echo "Homebrew missing. Installing, please wait"
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
 echo "Verifying homebrew installation"
@@ -79,7 +74,3 @@ softwareupdate --install --recommended
 
 # Open instructions for everything that's not installable by command line in a good way
 ~/dotfiles/.open-in-browser
-
-## Enable FileVault encryption
-echo "Enabling FileVault encryption"
-sudo fdesetup enable

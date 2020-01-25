@@ -13,9 +13,6 @@ brew tap homebrew/cask
 brew install bash-completion
 
 ## Utils
-brew install curl
-brew install libyaml
-brew install tmux
 brew install tree
 brew install unrar
 brew install watch
@@ -25,7 +22,6 @@ brew install jq
 brew install pwgen
 
 # Network utils
-brew install ettercap
 brew install netcat
 brew install nmap
 brew install reaver
@@ -49,7 +45,6 @@ brew install postgresql
 ## Chat
 brew cask install slack
 brew cask install telegram
-brew cask install whatsapp
 
 ## Entertainment
 brew cask install spotify
