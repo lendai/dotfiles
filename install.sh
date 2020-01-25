@@ -43,6 +43,10 @@ brew doctor
 echo "Installing tools and application with brew"
 source ${dotfilesDir}/Brewfile.sh
 
+echo "Downloading and running oh-my-zsh installation"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+source zsh.sh
+
 ## Reload bash
 echo "Reloading bash shell with new environment"
 source ~/.bashrc
