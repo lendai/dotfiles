@@ -32,6 +32,8 @@ brew install reaver
 brew install tcpdump
 brew install wireshark
 brew cask install wireshark
+brew cask install tor-browser
+brew cask install charles
 
 ## Software development
 brew cask install visual-studio-code
@@ -39,10 +41,15 @@ brew cask install postico
 brew cask install graphql-playground
 brew cask install sketch
 brew cask install abstract
+brew cask install sequel-pro
+brew install mysql
+brew install mysql-client
+brew install postgresql
 
 ## Chat
 brew cask install slack
 brew cask install telegram
+brew cask install whatsapp
 
 ## Entertainment
 brew cask install spotify
@@ -52,9 +59,10 @@ brew cask install vlc
 brew install homebrew/cask/docker-toolbox
 
 ## Other
+brew cask install google-chrome
 brew cask install transmission
 brew cask install caffeine
+brew cask install nordvpn
 
 ## Remove outdated versions
 brew cleanup
-brew cask cleanup

@@ -4,12 +4,16 @@
 echo "This requires sudo privilegies"
 sudo -v
 
+# Agree with xcode terms
+sudo xcodebuild -license accept
+
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 dotfilesDir=$(pwd)
 
-dotfiles=".bashrc .bash_profile .gitconfig .gitignore"
+#dotfiles=".bashrc .bash_profile .gitconfig .gitignore"
+dotfiles=".zshrc .gitconfig .gitignore"
 
 ## Replace homedir $dotfiles with the ones from repo
 for file in $dotfiles ; do
