@@ -38,6 +38,7 @@ brew cask install graphql-playground
 brew cask install sketch
 brew cask install abstract
 brew cask install sequel-pro
+brew cask install google-cloud-sdk
 brew install mysql
 brew install mysql-client
 brew install postgresql
@@ -58,6 +59,7 @@ brew cask install google-chrome
 brew cask install transmission
 brew cask install caffeine
 brew cask install nordvpn
+brew cask install 1password
 
 ## Remove outdated versions
 brew cleanup

@@ -73,8 +73,12 @@ echo "Updating some macos settings, this requires sudo password"
 # Install node dev environment
 ~/dotfiles/.node
 
+# Set up default folders
+~/dotfiles/.folders
+
 # Install all recommended software updates
 softwareupdate --install --recommended
 
 # Open instructions for everything that's not installable by command line in a good way
+chmod +x ~/dotfiles/.open-in-browser
 ~/dotfiles/.open-in-browser
