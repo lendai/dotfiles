@@ -10,7 +10,5 @@ for f in $(ls ~/dotfiles/zsh) ; do
     source ~/dotfiles/zsh/${f}
 done
 
-## Load bash-completion for a number of commands
-# if [ -f $(brew --prefix)/etc/bash_completion ]; then
-#     . $(brew --prefix)/etc/bash_completion
-# fi
+# Turn off sharing of command history (keep separate history per terminal window)
+unsetopt SHARE_HISTORY  

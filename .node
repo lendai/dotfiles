@@ -19,3 +19,5 @@ brew install yarn
 # Enables `git open` to open the current git repo in the browser
 npm install --global git-open
 
+# Knex - db migration tool
+npm install --global knex 
