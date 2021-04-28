@@ -1,0 +1,2 @@
+# AppleID username for publishing ios apps
+export FASTLANE_USER=daniel@agigen.se
