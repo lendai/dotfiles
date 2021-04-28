@@ -69,18 +69,13 @@ chmod +x ${execdir}/.macos
 chmod +x ${execdir}/.macos-daniel
 echo "Updating some macos settings, this requires sudo password"
 ${execdir}/.macos
-# ${execdir}/.macos-daniel
-${execdir}/.macos-patrick
+${execdir}/.macos-daniel
 
 # Install node dev environment
 ${execdir}/.node
 
 # Install all recommended software updates
 softwareupdate --install --recommended
-
-# Open instructions for everything that's not installable by command line in a good way
-chmod +x ${execdir}/.open-in-browser
-${execdir}/.open-in-browser
 
 ## Enable FileVault encryption
 echo "Enabling FileVault encryption"

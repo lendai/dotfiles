@@ -9,13 +9,9 @@ brew upgrade
 ## Install cask
 brew tap homebrew/cask
 
-## Completions
-brew install bash-completion
-
 ## Utils
 brew install curl
 brew install libyaml
-brew install tmux
 brew install tree
 brew install unrar
 brew install watch
@@ -32,21 +28,23 @@ brew install reaver
 brew install tcpdump
 brew install wireshark
 brew cask install wireshark
+brew cask install tor-browser
 
 ## Software development
 brew cask install visual-studio-code
 brew cask install postico
+brew cask install sequel-pro
 brew cask install graphql-playground
-brew cask install sketch
-brew cask install abstract
 
 ## Chat
 brew cask install slack
 brew cask install telegram
+brew cask install whatsapp
 
 ## Entertainment
 brew cask install spotify
 brew cask install vlc
+brew cask install mediainfo
 
 ## Virtualization
 brew install homebrew/cask/docker-toolbox
