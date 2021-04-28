@@ -1,8 +1,7 @@
-[user]
-	name = Daniel Mauno Pettersson
-	email = daniel@mauno.io
 [web]
     browser = google-chrome
+[core]
+	editor = nano
 [color]
 	ui = auto
 [color "branch"]
@@ -23,9 +22,12 @@
 	clean = git media clean %f
 	smudge = git media smudge %f
 	required = true
-[push]
-	default = simple
-[core]
-	excludesfile = ~/.gitignore
 [alias]
 	lgb = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
+	co = checkout
+	ci = commit
+	st = status	
+[pull]
+	rebase = true
+[credential]
+	helper = osxkeychain
