@@ -5,7 +5,7 @@ unset NVM_DIR
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 
 # Reload the bash profile to set NVM DIR again
-source ~/.bash_profile
+source ~/.zshrc
 
 # Install node version 10
 nvm install 10

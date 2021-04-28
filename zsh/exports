@@ -1,6 +1,6 @@
 ## set default editor
 export EDITOR=code
-export GIT_EDITOR=code
+export GIT_EDITOR=nano
 
 ## Highlight section titles in manual pages
 export LESS_TERMCAP_md="${ORANGE}"

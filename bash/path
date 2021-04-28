@@ -1,7 +1,0 @@
-## Ensure /usr/local/bin before /usr/bin for Homebrew
-PATH="/usr/local/bin:/usr/local/sbin:$PATH"
-
-## Put ~/bin before everything
-PATH="~/bin:$PATH"
-
-export PATH

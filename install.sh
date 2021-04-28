@@ -4,20 +4,18 @@
 echo "This requires sudo privilegies"
 sudo -v
 
+# Agree with xcode terms
+sudo xcodebuild -license accept
+
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 dotfilesDir=$(pwd)
 
-dotfiles=".bashrc .bash_profile .gitconfig .gitignore"
+dotfiles=".zshrc .gitconfig .gitignore"
 
 ## Replace homedir $dotfiles with the ones from repo
-for file in $dotfiles ; do
-    echo "Removing old ~/${file}"
-    rm -f ~/${file}
-    echo "Symlinking ${file} from ~/dotfiles directory"
-    ln -s ${dotfilesDir}/${file} ~/${file}
-done
+source dotfiles.sh
 
 ## Install xcode commandlinetools
 if [ ! -e /Library/Developer/CommandLineTools/usr/bin/gcc ]
@@ -42,7 +40,11 @@ echo "Verifying homebrew installation"
 brew doctor
 
 echo "Installing tools and application with brew"
-source ${dotfilesDir}/Brewfile.sh
+source Brewfile.sh
+
+echo "Downloading and running oh-my-zsh installation"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+source zsh.sh
 
 ## Reload bash
 echo "Reloading bash shell with new environment"
@@ -63,18 +65,22 @@ fi
 execdir=$(pwd)
 
 ## Make .macos executable and run
-chmod +x ~/dotfiles/.macos
+chmod +x ${execdir}/.macos
+chmod +x ${execdir}/.macos-daniel
 echo "Updating some macos settings, this requires sudo password"
-~/dotfiles/.macos
+${execdir}/.macos
+# ${execdir}/.macos-daniel
+${execdir}/.macos-patrick
 
 # Install node dev environment
-~/dotfiles/.node
+${execdir}/.node
 
 # Install all recommended software updates
 softwareupdate --install --recommended
 
 # Open instructions for everything that's not installable by command line in a good way
-~/dotfiles/.open-in-browser
+chmod +x ${execdir}/.open-in-browser
+${execdir}/.open-in-browser
 
 ## Enable FileVault encryption
 echo "Enabling FileVault encryption"
