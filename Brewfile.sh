@@ -12,8 +12,6 @@ brew tap homebrew/cask
 ## Utils
 brew install curl
 brew install libyaml
-brew install tree
-brew install unrar
 brew install watch
 brew install wget
 brew install xz
@@ -27,31 +25,28 @@ brew install nmap
 brew install reaver
 brew install tcpdump
 brew install wireshark
-brew cask install wireshark
-brew cask install tor-browser
+brew install wireshark
+brew install tor-browser
 
 ## Software development
-brew cask install visual-studio-code
-brew cask install postico
-brew cask install sequel-pro
-brew cask install graphql-playground
+brew install visual-studio-code
+brew install postico
+brew install sequel-pro
+brew install graphql-playground
 
 ## Chat
-brew cask install slack
-brew cask install telegram
-brew cask install whatsapp
+brew install slack
+brew install telegram
+brew install whatsapp
 
 ## Entertainment
-brew cask install spotify
-brew cask install vlc
-brew cask install mediainfo
-
-## Virtualization
-brew install homebrew/cask/docker-toolbox
+brew install spotify
+brew install vlc
+brew install mediainfo
 
 ## Other
-brew cask install transmission
-brew cask install caffeine
+brew install transmission
+brew install caffeine
 
 ## Remove outdated versions
 brew cleanup

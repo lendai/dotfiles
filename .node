@@ -14,7 +14,7 @@ nvm install 12
 nvm alias default node
 
 # Install yarn globally
-brew install yarn --without-node
+brew install yarn
 
 # Enables `git open` to open the current git repo in the browser
 npm install --global git-open
