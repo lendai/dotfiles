@@ -20,7 +20,11 @@ Move the SSH keys from the previous computer. Run `open ~/.ssh`
 Locate `id_rsa` and `id_rsa.pub` and AirDrop them to the new laptop.
 Place them in `~/.ssh`
 
-## Step 5 - Install dotfiles repo + run installation
+## Step 5 - Connect Internet Accounts
+
+Go to System Preferences - Internet Accounts and connect all used accounts
+
+## Step 6 - Install dotfiles repo + run installation
 
 ```sh
 cd
