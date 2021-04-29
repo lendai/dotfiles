@@ -68,3 +68,7 @@ softwareupdate --install --recommended
 ## Enable FileVault encryption
 echo "Enabling FileVault encryption"
 sudo fdesetup enable
+
+# Configure git
+git config --global user.name "Daniel Mauno Pettersson"
+git config --global user.email daniel@mauno.io

@@ -31,3 +31,6 @@
 	rebase = true
 [credential]
 	helper = osxkeychain
+[user]
+	name = Daniel Mauno Pettersson
+	email = daniel@mauno.io
