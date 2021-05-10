@@ -34,6 +34,7 @@ brew install postico
 brew install sequel-pro
 brew install graphql-playground
 brew install google-cloud-sdk 
+brew install postgres
 
 ## Chat
 brew install slack
