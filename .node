@@ -20,4 +20,7 @@ brew install yarn
 npm install --global git-open
 
 # Install `jwt` command for parsing jwt tokens
-npm install -global jwt-cli
+npm install --global jwt-cli
+
+# install ttab for starting multiple terminal tabs 
+npm install --global ttab

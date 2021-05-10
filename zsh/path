@@ -1,8 +1,8 @@
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '~/google-cloud-sdk/path.bash.inc' ]; then . '~/google-cloud-sdk/path.bash.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '~/google-cloud-sdk/completion.bash.inc' ]; then . '~/google-cloud-sdk/completion.bash.inc'; fi
+## Add gcloud to path (installed by brew)
+if [ -d '/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk' ]; then
+    source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc" 
+    source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc" 
+fi
 
 ## Ensure /usr/local/bin before /usr/bin for Homebrew
 PATH="/usr/local/bin:/usr/local/sbin:$PATH:~/.local/bin"

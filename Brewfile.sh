@@ -33,6 +33,7 @@ brew install visual-studio-code
 brew install postico
 brew install sequel-pro
 brew install graphql-playground
+brew install google-cloud-sdk 
 
 ## Chat
 brew install slack
