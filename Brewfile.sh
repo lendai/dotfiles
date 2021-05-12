@@ -27,6 +27,7 @@ brew install tcpdump
 brew install wireshark
 brew install wireshark
 brew install tor-browser
+brew install --cask tunnelblick
 
 ## Software development
 brew install visual-studio-code
