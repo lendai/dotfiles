@@ -2,7 +2,7 @@
 unset NVM_DIR
 
 # Run nvm install script
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
 # Reload the bash profile to set NVM DIR again
 source ~/.zshrc
@@ -14,10 +14,13 @@ nvm install 12
 nvm alias default node
 
 # Install yarn globally
-brew install yarn --without-node
+brew install yarn
 
 # Enables `git open` to open the current git repo in the browser
 npm install --global git-open
 
 # Install `jwt` command for parsing jwt tokens
-npm install -global jwt-cli
+npm install --global jwt-cli
+
+# install ttab for starting multiple terminal tabs 
+npm install --global ttab

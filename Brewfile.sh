@@ -9,15 +9,9 @@ brew upgrade
 ## Install cask
 brew tap homebrew/cask
 
-## Completions
-brew install bash-completion
-
 ## Utils
 brew install curl
 brew install libyaml
-brew install tmux
-brew install tree
-brew install unrar
 brew install watch
 brew install wget
 brew install xz
@@ -31,29 +25,31 @@ brew install nmap
 brew install reaver
 brew install tcpdump
 brew install wireshark
-brew cask install wireshark
+brew install wireshark
+brew install tor-browser
+brew install --cask tunnelblick
 
 ## Software development
-brew cask install visual-studio-code
-brew cask install postico
-brew cask install graphql-playground
-brew cask install sketch
-brew cask install abstract
+brew install visual-studio-code
+brew install postico
+brew install sequel-pro
+brew install graphql-playground
+brew install google-cloud-sdk 
+brew install postgres
 
 ## Chat
-brew cask install slack
-brew cask install telegram
+brew install slack
+brew install telegram
+brew install whatsapp
 
 ## Entertainment
-brew cask install spotify
-brew cask install vlc
-
-## Virtualization
-brew install homebrew/cask/docker-toolbox
+brew install spotify
+brew install vlc
+brew install mediainfo
 
 ## Other
-brew cask install transmission
-brew cask install caffeine
+brew install transmission
+brew install caffeine
 
 ## Remove outdated versions
 brew cleanup
