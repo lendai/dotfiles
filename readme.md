@@ -46,3 +46,8 @@ Replace with your user specific script. Or if you don't have one then skip it.
 ```sh
 ./macos-daniel.sh
 ```
+
+## Step 8 - Restart to make sure all changes are applied
+```sh
+sudo shutdown -r now
+```
