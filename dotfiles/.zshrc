@@ -1,4 +1,4 @@
-export ZSH="/Users/danielmp/.oh-my-zsh"
+export ZSH="/Users/`whoami`/.oh-my-zsh"
 
 ZSH_THEME="dotfile"
 plugins=(git github osx gnu-utils colorize colored-man-pages cp extract web-search themes vagrant vscode fabric vault timer docker-compose sublime)
@@ -6,8 +6,8 @@ plugins=(git github osx gnu-utils colorize colored-man-pages cp extract web-sear
 source ~/.oh-my-zsh/oh-my-zsh.sh
 
 ## Setup zsh environment
-for f in $(ls ~/dotfiles/zsh) ; do
-    source ~/dotfiles/zsh/${f}
+for f in $(ls ./zsh) ; do
+    source $(pwd)/zsh/${f}
 done
 
 ## Load bash-completion for a number of commands

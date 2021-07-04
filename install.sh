@@ -54,10 +54,8 @@ execdir=$(pwd)
 
 ## Make .macos executable and run
 chmod +x ${execdir}/.macos
-chmod +x ${execdir}/.macos-daniel
 echo "Updating some macos settings, this requires sudo password"
 ${execdir}/.macos
-${execdir}/.macos-daniel
 
 # Install node dev environment
 ${execdir}/.node
@@ -68,7 +66,3 @@ softwareupdate --install --recommended
 ## Enable FileVault encryption
 echo "Enabling FileVault encryption"
 sudo fdesetup enable
-
-# Configure git
-git config --global user.name "Daniel Mauno Pettersson"
-git config --global user.email daniel@mauno.io

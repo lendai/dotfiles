@@ -38,3 +38,11 @@ This will;
 - Setup the terminal
 - Set a bunch of default values for MacOS
 - Install the applications I use often
+
+## Step 7 - Run user specific
+
+Replace with your user specific script. Or if you don't have one then skip it.
+
+```sh
+./macos-daniel.sh
+```
