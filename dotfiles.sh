@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dotfilesDir=$(pwd)/dotfiles/
+dotfilesDir=$(pwd)/dotfiles
 
 dotfiles=".bashrc .bash_profile .gitconfig .gitignore"
 

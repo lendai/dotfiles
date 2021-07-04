@@ -12,7 +12,7 @@ for file in $themes ; do
     ln -s ${themesDir}/${file} ~/.oh-my-zsh/custom/themes/${file}
 done
 
-dotfilesDir=$(pwd)/dotfiles/
+dotfilesDir=$(pwd)/dotfiles
 zshFile=".zshrc"
 echo "Removing old ~/${zshFile}"
 rm -f ~/${zshFile}

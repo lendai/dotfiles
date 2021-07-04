@@ -34,6 +34,9 @@ then
     sudo chmod 775 /usr/local/include
     echo "Homebrew missing. Installing, please wait"
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ## Add to bin
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/`whoami`/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 echo "Verifying homebrew installation"
