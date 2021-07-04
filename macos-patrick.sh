@@ -1,5 +1,5 @@
 # Show only running apps in dock
-defaults write com.apple.dock static-only -bool true; killall Dock
+defaults write com.apple.dock static-only -bool false; killall Dock
 
 # Disable "smart quotes"
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false

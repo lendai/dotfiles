@@ -6,8 +6,8 @@ plugins=(git github osx gnu-utils colorize colored-man-pages cp extract web-sear
 source ~/.oh-my-zsh/oh-my-zsh.sh
 
 ## Setup zsh environment
-for f in $(ls ./zsh) ; do
-    source $(pwd)/zsh/${f}
+for f in $(ls ~/dotfiles/zsh) ; do
+    source ~/dotfiles/zsh/${f}
 done
 
 ## Load bash-completion for a number of commands
