@@ -162,6 +162,12 @@ defaults write com.apple.appstore WebKitDeveloperExtras -bool true
 # Enable Debug Menu in the Mac App Store
 defaults write com.apple.appstore ShowDebugMenu -bool true
 
+###############################################################################
+# Sound / Audio                                                               #
+###############################################################################
+
+# Turn off sound for screenshot and trash
+defaults write com.apple.systemsound com.apple.sound.uiaudio.enabled -bool false
 
 ###############################################################################
 # Kill affected applications                                                  #
