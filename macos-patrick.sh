@@ -20,7 +20,23 @@ brew install --cask sizeup
 # Install Github CLI
 brew install gh
 
+# Install Figma
+brew install --cask figma
+
+# Install Clickup
+brew install --cask clickup
+
+# Install NordVPN
+brew install --cask nordvpn
+
+# Install Messenger (Facebook)
+brew install --cask messenger
+
+# Install Dropbox
+brew install --cask dropbox
+
 # Set key repeat to be faster than normal
 defaults write com.apple.universalaccess slowKey -int 0 # Disable Slow Keys.
 defaults write NSGlobalDomain InitialKeyRepeat -int 0 # Set key repeat triggering delay to even shorter.
 defaults write NSGlobalDomain KeyRepeat -int 0 # Set key repeat rate to even faster.
+
