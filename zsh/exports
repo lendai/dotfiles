@@ -18,7 +18,3 @@ export LS_COLORS="di=34;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43
 
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 export GIT_PS1_SHOWDIRTYSTATE=true
-
-# Load nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
