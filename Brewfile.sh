@@ -36,6 +36,8 @@ brew install sequel-pro
 brew install graphql-playground
 brew install google-cloud-sdk 
 brew install postgres
+brew install git-absorb
+brew install fzf
 
 ## Chat
 brew install slack

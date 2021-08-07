@@ -27,7 +27,11 @@
 	co = checkout
 	ci = commit
 	st = status	
+	br = branch
+    fixup = "!git log -n 50 --pretty=format:'%h %s' --no-merges | fzf | cut -c -7 | xargs -o git commit --fixup"
 [pull]
 	rebase = true
 [credential]
 	helper = osxkeychain
+[rebase]
+    autosquash = true
