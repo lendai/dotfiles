@@ -1,7 +1,7 @@
 export ZSH="/Users/danielmp/.oh-my-zsh"
 
 ZSH_THEME="dotfile"
-plugins=(git github osx gnu-utils colorize colored-man-pages cp extract web-search themes vagrant vscode fabric vault timer docker-compose sublime)
+plugins=(git github macos gnu-utils colorize colored-man-pages cp extract web-search themes vagrant vscode fabric vault timer docker-compose sublime)
 
 source ~/.oh-my-zsh/oh-my-zsh.sh
 
