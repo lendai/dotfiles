@@ -1,0 +1,6 @@
+mkdir ~/Code
+
+mkdir ~/Code/memmo
+cd ~/Code/memmo
+git clone git@github.com:Memmo-App/memmo.git
+git clone git@github.com:Memmo-App/mobileapp.git
