@@ -34,3 +34,5 @@
 [user]
 	name = Daniel Mauno Pettersson
 	email = daniel@mauno.io
+[init]
+	defaultBranch = main

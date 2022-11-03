@@ -31,6 +31,6 @@ done
 alias gbpurge='git branch --merged | grep -Ev "(\*|master|develop|staging)" | xargs -n 1 git branch -d'
 
 # GIT - Check out master, get latest and clean up
-alias gcmp='git checkout master && git pull && gbpurge'
+alias gcmsp='git checkout master && git pull && gbpurge'
+alias gcmp='git checkout main && git pull && gbpurge'
 alias gcsp='git checkout staging && git pull && gbpurge'
-alias gc2p='git checkout v2 && git pull && gbpurge'
