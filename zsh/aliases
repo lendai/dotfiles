@@ -34,3 +34,6 @@ alias gbpurge='git branch --merged | grep -Ev "(\*|master|develop|staging)" | xa
 alias gcmsp='git checkout master && git pull && gbpurge'
 alias gcmp='git checkout main && git pull && gbpurge'
 alias gcsp='git checkout staging && git pull && gbpurge'
+
+# pnpm aliases
+alias pn=pnpm

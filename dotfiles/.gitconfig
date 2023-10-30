@@ -33,6 +33,11 @@
 	helper = osxkeychain
 [user]
 	name = Daniel Mauno Pettersson
-	email = daniel@mauno.io
+	email = lendai@users.noreply.github.com
 [init]
 	defaultBranch = main
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
