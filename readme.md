@@ -38,3 +38,16 @@ This will;
 - Setup the terminal
 - Set a bunch of default values for MacOS
 - Install the applications I use often
+
+## Step 7 - manual install
+
+(see if these can be moved into automatic install)
+
+- LogiTune - app for managing logitech gera
+- 1pass cli
+- discord
+- whatsapp
+- github macos app
+- linear
+- loom
+- displayport manager? 
