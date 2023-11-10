@@ -43,11 +43,12 @@ This will;
 - Set a bunch of default values for MacOS
 - Install the applications I use often
 
-## Step 7 - manual install
+## Step 7 - manual install & settings
 
 (see if these can be moved into automatic install)
-
-- nothing here right now
+https://apple.stackexchange.com/questions/193937/shortcut-for-toggling-between-different-windows-of-same-app
+For `Move focus to next window` - bind `⌘<`
+<img width="827" alt="image" src="https://github.com/lendai/dotfiles/assets/690447/eba00e5d-5c08-4653-8d14-ba3f7b7d4d00">
 
 ## Step 8 - checkout git
 
