@@ -24,7 +24,7 @@ brew install netcat
 brew install nmap
 brew install reaver
 brew install tcpdump
-brew install wireshark
+brew install --cask wireshark
 brew install tor-browser
 brew install --cask tunnelblick
 
@@ -32,7 +32,6 @@ brew install --cask tunnelblick
 brew install visual-studio-code
 brew install postico
 brew install google-cloud-sdk 
-brew install postgres
 brew install --cask linear-linear
 brew install --cask github
 

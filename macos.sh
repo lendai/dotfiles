@@ -21,9 +21,6 @@ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 # Automatically quit printer app once the print jobs complete
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 
-# Show the battery percentage in the menu bar
-defaults write com.apple.menuextra.battery ShowPercent -string "YES"
-
 # Require password immediately after the computer went into
 # sleep or screen saver mode
 defaults write com.apple.screensaver askForPassword -int 1
@@ -31,9 +28,6 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Use AirDrop over every interface. srsly this should be a default.
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
-
-# Increase window resize speed for Cocoa applications
-defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 
 # Reveal IP address, hostname, OS version, etc. when clicking the clock
 # in the login window
@@ -54,17 +48,10 @@ defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 # Follow the keyboard focus while zoomed in
 defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 
-# Disable press-and-hold for keys in favor of key repeat
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
-defaults write -g ApplePressAndHoldEnabled -bool false
-
 # Set key repeat to be faster than normal
 defaults write com.apple.universalaccess slowKey -int 0 # Disable Slow Keys.
 defaults write NSGlobalDomain InitialKeyRepeat -int 10 # Set key repeat triggering delay to even shorter.
 defaults write NSGlobalDomain KeyRepeat -int 3 # Set key repeat rate to even faster.
-
-# Increase sound quality for Bluetooth headphones/headsets
-defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
@@ -123,11 +110,6 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
-
-# Set terminal pro theme default
-defaults write com.apple.Terminal "Default Window Settings" -string "IR_Black"
-defaults write com.apple.Terminal "Startup Window Settings" -string "IR_Black"
-defaults import com.apple.Terminal "$HOME/Library/Preferences/com.apple.Terminal.plist"
 
 ###############################################################################
 # Address Book, Dashboard, iCal, TextEdit, and Disk Utility                   #
