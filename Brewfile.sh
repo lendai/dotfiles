@@ -25,15 +25,12 @@ brew install nmap
 brew install reaver
 brew install tcpdump
 brew install wireshark
-brew install wireshark
 brew install tor-browser
 brew install --cask tunnelblick
 
 ## Software development
 brew install visual-studio-code
 brew install postico
-brew install sequel-pro
-brew install graphql-playground
 brew install google-cloud-sdk 
 brew install postgres
 
@@ -48,8 +45,8 @@ brew install vlc
 brew install mediainfo
 
 ## Other
-brew install transmission
 brew install caffeine
+brew install --cask cron
 
 ## Remove outdated versions
 brew cleanup

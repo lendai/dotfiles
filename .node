@@ -8,7 +8,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 source ~/.zshrc
 
 # Install node version 12
-nvm install 16
+nvm install 12
 
 # Set the latest version of node as the default
 nvm alias default node

@@ -2,7 +2,7 @@
 
 Easily setup a new mac.
 
-## Step 1 - Install all updates from Apple
+## Step 1 - Install all updates from Apple & XCode
 
 ## Step 2 - Enable iCloud sync
 
@@ -12,7 +12,7 @@ Download and install:
 
 - Google Chrome
 - 1Password
-- Docker https://docs.docker.com/docker-for-mac/install/
+- Docker <https://docs.docker.com/docker-for-mac/install/>
 
 ## Step 4 - Copy private SSH keys
 
