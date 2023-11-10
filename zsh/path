@@ -5,7 +5,7 @@ if [ -d '/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk' ]; the
 fi
 
 ## Ensure //opt/homebrew/bin before /usr/bin for Homebrew
-PATH="//opt/homebrew/bin:$PATH:~/.local/bin"
+PATH="/opt/homebrew/bin:$PATH:~/.local/bin"
 
 ## Add python
 PATH="$(brew --prefix)/opt/python@3.11/libexec/bin:$PATH"
