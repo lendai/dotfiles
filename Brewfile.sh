@@ -33,11 +33,14 @@ brew install visual-studio-code
 brew install postico
 brew install google-cloud-sdk 
 brew install postgres
+brew install --cask linear-linear
+brew install --cask github
 
 ## Chat
-brew install slack
-brew install telegram
-brew install whatsapp
+brew install --cask slack
+brew install --cask telegram
+brew install --cask whatsapp
+brew install --cask discord
 
 ## Entertainment
 brew install spotify
@@ -47,6 +50,8 @@ brew install mediainfo
 ## Other
 brew install caffeine
 brew install --cask cron
+brew install --cask 1password-cli
+brew install --cask logitune
 
 ## Remove outdated versions
 brew cleanup

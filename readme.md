@@ -42,12 +42,3 @@ This will;
 ## Step 7 - manual install
 
 (see if these can be moved into automatic install)
-
-- LogiTune - app for managing logitech gera
-- 1pass cli
-- discord
-- whatsapp
-- github macos app
-- linear
-- loom
-- displayport manager? 
