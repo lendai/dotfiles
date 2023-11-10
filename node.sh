@@ -2,7 +2,7 @@
 unset NVM_DIR
 
 # Run nvm install script
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 
 # Reload the bash profile to set NVM DIR again
 source ~/.zshrc
@@ -10,11 +10,11 @@ source ~/.zshrc
 # Install node version 12
 nvm install 12
 
+# Install node version 18.17.1
+nvm install 18.17.1
+
 # Set the latest version of node as the default
 nvm alias default node
-
-# Install yarn globally
-brew install yarn
 
 # Enables `git open` to open the current git repo in the browser
 npm install --global git-open

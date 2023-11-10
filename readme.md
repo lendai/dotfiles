@@ -46,4 +46,11 @@ This will;
 ## Step 7 - manual install
 
 (see if these can be moved into automatic install)
+
 - nothing here right now
+
+## Step 8 - checkout git
+
+```
+./dev-env.sh
+```
