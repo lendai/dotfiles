@@ -26,13 +26,8 @@ then
 fi
 
 ## Make sure homebrew exists, otherwise install it
-if [ ! -e /usr/local/bin/brew ]
+if [ ! -e /opt/homebrew/bin/brew ]
 then
-    echo "chmod 775 /usr/local for Homebrew"
-    sudo chmod 775 /usr/local
-    echo "chmod 775 /usr/local/include for Homebrew"
-    sudo chmod 775 /usr/local/include
-    echo "Homebrew missing. Installing, please wait"
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
