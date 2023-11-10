@@ -4,7 +4,11 @@ Easily setup a new mac.
 
 ## Step 1 - Install all updates from Apple & XCode
 
-## Step 2 - Enable iCloud sync
+```sh
+softwareupdate --install --recommended
+```
+
+## Step 2 - Enable iCloud sync in settings
 
 ## Step 3 - Install basic apps
 
@@ -42,3 +46,4 @@ This will;
 ## Step 7 - manual install
 
 (see if these can be moved into automatic install)
+- nothing here right now

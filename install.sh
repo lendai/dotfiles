@@ -39,20 +39,16 @@ source Brewfile.sh
 echo "Reloading zsh shell with new environment"
 source ~/.zshrc 
 
-execdir=$(pwd)
 
 ## Make .macos executable and run
-chmod +x ${execdir}/.macos
-chmod +x ${execdir}/.macos-daniel
+chmod +x macos.sh
+chmod +x macos-daniel.sh
 echo "Updating some macos settings, this requires sudo password"
-${execdir}/.macos
-${execdir}/.macos-daniel
+source macos.sh
+source macos-daniel.sh
 
 # Install node dev environment
-${execdir}/.node
-
-# Install all recommended software updates
-softwareupdate --install --recommended
+source node.sh
 
 # Configure git
 git config --global user.name "Daniel Mauno Pettersson"
