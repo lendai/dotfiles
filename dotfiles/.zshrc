@@ -1,4 +1,4 @@
-export ZSH="/Users/danielmp/.oh-my-zsh"
+export ZSH="/Users/`whoami`/.oh-my-zsh"
 
 ZSH_THEME="dotfile"
 plugins=(git github macos gnu-utils colorize colored-man-pages cp extract web-search themes vagrant vscode fabric vault timer docker-compose sublime)

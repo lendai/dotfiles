@@ -42,14 +42,9 @@ source ~/.zshrc
 
 ## Make .macos executable and run
 chmod +x macos.sh
-chmod +x macos-daniel.sh
 echo "Updating some macos settings, this requires sudo password"
 source macos.sh
-source macos-daniel.sh
 
 # Install node dev environment
 source node.sh
 
-# Configure git
-git config --global user.name "Daniel Mauno Pettersson"
-git config --global user.email daniel@mauno.io
