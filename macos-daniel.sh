@@ -10,3 +10,7 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Configure git
+git config --global user.name "Daniel Mauno Pettersson"
+git config --global user.email daniel@mauno.io

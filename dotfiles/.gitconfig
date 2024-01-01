@@ -31,9 +31,6 @@
 	rebase = true
 [credential]
 	helper = osxkeychain
-[user]
-	name = Daniel Mauno Pettersson
-	email = lendai@users.noreply.github.com
 [init]
 	defaultBranch = main
 [filter "lfs"]
