@@ -23,9 +23,6 @@ brew install gh
 # Install Figma
 brew install --cask figma
 
-# Install Linear
-brew install --cask linear-linear
-
 # Install NordVPN
 brew install --cask nordvpn
 

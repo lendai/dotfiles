@@ -34,6 +34,8 @@ brew install postico
 brew install google-cloud-sdk 
 brew install --cask linear-linear
 brew install --cask github
+brew install pnpm
+brew install poetry 
 
 ## Chat
 brew install --cask slack
