@@ -11,8 +11,8 @@ alias ll='ls -alG'
 alias du='du -h'
 alias df='df -h'
 
-# Reload .bashrc if you change anything
-alias reload='echo "Reloading bash environment" ; . ~/.bashrc && echo "bash environment reloaded"'
+# Reload zsh config after editing ~/dotfiles
+alias reload='echo "Reloading zsh" && source ~/.zshrc && echo "zsh reloaded"'
 
 # Generate a valid mac address
 alias genmac='openssl rand -hex 6 | sed "s/\(..\)/\1:/g; s/.$//"'
