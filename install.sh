@@ -50,4 +50,7 @@ source macos-daniel.sh
 # Install node dev environment
 source node.sh
 
+# Install Python dev environment (pyenv, pipx, poetry)
+source python.sh
+
 # Git user.name / user.email live in ~/.gitconfig via symlink from zsh.sh

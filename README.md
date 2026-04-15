@@ -22,9 +22,14 @@ Connect **Internet Accounts** in System Settings for mail, calendars, and contac
 
 Some tools are easier or safer outside this script:
 
-- **Google Chrome** (or rely on Safari)
-- **1Password** (app; CLI is installed via Homebrew in `Brewfile.sh`)
-- **Docker Desktop** for containers: [Docker Desktop for Mac](https://docs.docker.com/desktop/setup/install/mac-install/) (choose the Apple Silicon or Intel build to match your machine)
+- **Amazon Kindle** (Mac App Store)
+- **Adobe Creative Cloud / Photoshop** (Adobe installer)
+- **Bambu Studio** / **Bambu Handy** (3D printing; download from bambulab.com)
+- **Homey** (Mac App Store or homey.app)
+- **Sonos** (Mac App Store or sonos.com)
+- **Traeger** (Mac App Store)
+
+The following are now installed via `Brewfile.sh` and no longer need manual installation: 1Password, Docker, Google Chrome, Claude, ChatGPT, Rectangle, Zoom, DBeaver, NordVPN, Microsoft Teams, Plex, Steam, Inkscape, Screen Studio, Whisky, ngrok.
 
 ## SSH keys
 
@@ -52,9 +57,10 @@ cd dotfiles
 - Install **Oh My Zsh** non-interactively
 - Symlink `~/.zshrc` and `~/.gitconfig` from this repo
 - Install **Homebrew** (Apple Silicon: `/opt/homebrew`) if missing
-- Run `Brewfile.sh` (CLI tools, Cursor, VS Code, messaging apps, etc.)
+- Run `Brewfile.sh` (CLI tools, dev apps, browsers, chat, AI tools, media, utilities)
 - Apply macOS defaults from `macos.sh` and `macos-daniel.sh`
-- Install **Node** via nvm (`node.sh`): current nvm, LTS Node, **Corepack** for pnpm/Yarn, and a few global npm CLIs
+- Install **Node** via nvm (`node.sh`): current nvm, LTS Node, **Corepack** for pnpm/Yarn, and global npm CLIs (git-open, jwt-cli, ttab, eas-cli)
+- Install **Python** via pyenv (`python.sh`): Python 3.14, pipx, and poetry
 
 ### Command Line Tools ordering
 
@@ -67,7 +73,7 @@ Optional: bind **Move focus to next window** (same app) in **System Settings →
 
 ## Workspace layout (manual clones)
 
-There is no automated “checkout all repos” script. After shell and `git` work, create your tree by hand, for example:
+There is no automated "checkout all repos" script. After shell and `git` work, create your tree by hand, for example:
 
 ```sh
 mkdir -p ~/Code/personal ~/Code/work
@@ -80,7 +86,7 @@ Adjust hostnames, org names, and SSH remotes to match your accounts.
 ## Cursor and agentic development
 
 - **Cursor** is installed via Homebrew (`cursor` cask) in `Brewfile.sh`. The GUI app may still prompt for updates separately.
-- **Shell editor**: `zsh/exports` prefers `cursor -w` as `EDITOR` when the `cursor` CLI is on `PATH` (open Cursor → Command Palette → “Install `cursor` command” if needed).
+- **Shell editor**: `zsh/exports` prefers `cursor -w` as `EDITOR` when the `cursor` CLI is on `PATH` (open Cursor → Command Palette → "Install `cursor` command" if needed).
 - **Project rules** for this repo live under [.cursor/rules/](.cursor/rules/). Copy the same pattern into other repositories where you want consistent agent behavior.
 - **User settings** (global) live under `~/Library/Application Support/Cursor/User/` — paths can change between Cursor versions; use **Cursor Settings** in the app to confirm.
 - **MCP servers** are configured in Cursor (Settings → MCP). Do not try to sync the whole `~/.cursor/projects/` tree from dotfiles; it is machine-local and noisy.

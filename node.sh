@@ -26,3 +26,6 @@ npm install --global jwt-cli
 
 # install ttab for starting multiple terminal tabs
 npm install --global ttab
+
+# Expo Application Services CLI (React Native / Expo builds & submissions)
+npm install --global eas-cli
