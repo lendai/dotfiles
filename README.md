@@ -56,7 +56,14 @@ cd dotfiles
 
 - Install **Oh My Zsh** non-interactively
 - Symlink `~/.zshrc` and `~/.gitconfig` from this repo
-- Install **Homebrew** (Apple Silicon: `/opt/homebrew`) if missing
+- Install **Homebrew** (Apple Silicon: `/opt/homebrew`) if missing — same as [brew.sh](https://brew.sh):
+
+  ```sh
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  ```
+
+  Use a new terminal afterward, or run `eval "$(/opt/homebrew/bin/brew shellenv)"` (Apple Silicon) or `eval "$(/usr/local/bin/brew shellenv)"` (Intel) once so `brew` is on your `PATH`.
+
 - Run `Brewfile.sh` (CLI tools, dev apps, browsers, chat, AI tools, media, utilities)
 - Apply macOS defaults from `macos.sh` and `macos-daniel.sh`
 - Install **Node** via nvm (`node.sh`): current nvm, LTS Node, **Corepack** for pnpm/Yarn, and global npm CLIs (git-open, jwt-cli, ttab, eas-cli)
