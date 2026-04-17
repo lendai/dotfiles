@@ -53,4 +53,9 @@ source node.sh
 # Install Python dev environment (pyenv, pipx, poetry)
 source python.sh
 
+# ~/Code workspaces and default git checkouts (SSH remotes; needs GitHub keys)
+chmod +x code-repos.sh
+echo "Setting up Code/ checkouts"
+sh ./code-repos.sh
+
 # Git user.name / user.email live in ~/.gitconfig via symlink from zsh.sh

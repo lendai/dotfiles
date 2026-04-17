@@ -1,6 +1,6 @@
 # Agent notes (this repository)
 
-These dotfiles drive a **destructive-ish bootstrap** (`install.sh`, `Brewfile.sh`, `macos.sh`). When changing them:
+These dotfiles drive a **destructive-ish bootstrap** (`install.sh`, `Brewfile.sh`, `macos.sh`, `code-repos.sh`). When changing them:
 
 - Prefer **idempotent** steps: safe to re-run without surprising data loss, except where the script intentionally replaces symlinks (`zsh.sh`).
 - **Never** commit secrets (API keys, tokens, private hostnames). Put clones and remotes in the README as placeholders (`you/your-repo`).

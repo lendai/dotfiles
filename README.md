@@ -68,6 +68,7 @@ cd dotfiles
 - Apply macOS defaults from `macos.sh` and `macos-daniel.sh`
 - Install **Node** via nvm (`node.sh`): current nvm, LTS Node, **Corepack** for pnpm/Yarn, and global npm CLIs (git-open, jwt-cli, ttab, eas-cli)
 - Install **Python** via pyenv (`python.sh`): Python 3.14, pipx, and poetry
+- Create **`~/Code/personal`** and **`~/Code/qatech`** and clone default repos (`code-repos.sh`): QA.tech (`acme-signal`, `qatech`) and personal (`dhltools_v2`, `sauna`, `dotfiles`). Requires SSH access to GitHub; existing checkouts are skipped.
 
 ### Command Line Tools ordering
 
@@ -78,17 +79,21 @@ If `install.sh` fails before Homebrew because `git` is missing, install CLT firs
 Optional: bind **Move focus to next window** (same app) in **System Settings → Keyboard → Keyboard Shortcuts → Keyboard**  
 [Apple Stack Exchange reference](https://apple.stackexchange.com/questions/193937/shortcut-for-toggling-between-different-windows-of-same-app)
 
-## Workspace layout (manual clones)
+## Workspace layout (`~/Code`)
 
-There is no automated "checkout all repos" script. After shell and `git` work, create your tree by hand, for example:
+`./install.sh` runs `code-repos.sh`, which creates **`~/Code/personal`** and **`~/Code/qatech`** and clones the default repositories there (skips directories that already have a `.git` folder). Override the base path with **`CODE_ROOT`** if you want a different tree, for example:
 
 ```sh
-mkdir -p ~/Code/personal ~/Code/work
-cd ~/Code/personal
-git clone git@github.com:you/your-repo.git
+CODE_ROOT="$HOME/src" ./install.sh
 ```
 
-Adjust hostnames, org names, and SSH remotes to match your accounts.
+To refresh only workspaces without a full install:
+
+```sh
+./code-repos.sh
+```
+
+Add or change repos by editing [code-repos.sh](code-repos.sh).
 
 ## Cursor and agentic development
 
