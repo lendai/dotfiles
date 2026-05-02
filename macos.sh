@@ -112,17 +112,8 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 defaults write com.apple.terminal StringEncodings -array 4
 
 ###############################################################################
-# Address Book, Dashboard, iCal, TextEdit, and Disk Utility                   #
+# TextEdit, Disk Utility                                                      #
 ###############################################################################
-
-# Enable the debug menu in Address Book
-defaults write com.apple.addressbook ABShowDebugMenu -bool true
-
-# Enable Dashboard dev mode (allows keeping widgets on the desktop)
-defaults write com.apple.dashboard devmode -bool true
-
-# Enable the debug menu in iCal (pre-10.8)
-defaults write com.apple.iCal IncludeDebugMenu -bool true
 
 # Enable the debug menu in Disk Utility
 defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
@@ -149,9 +140,8 @@ defaults write com.apple.appstore ShowDebugMenu -bool true
 # Kill affected applications                                                  #
 ###############################################################################
 
-for app in "Address Book" "Calendar" "Contacts" "cfprefsd" "Dashboard" "Dock" "Finder" \
-    "Mail" "SystemUIServer" "Safari" "Google Chrome" "Google Chrome Canary" \
-    "iTunes" "iCal" "Photos" "Safari" "SizeUp" ; do
+for app in "cfprefsd" "Dock" "Finder" "Mail" "Calendar" "Contacts" "Photos" \
+    "SystemUIServer" "Safari" "Google Chrome" "Terminal" ; do
     killall "$app" > /dev/null 2>&1
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."

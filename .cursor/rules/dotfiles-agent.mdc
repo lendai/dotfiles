@@ -1,0 +1,12 @@
+---
+description: Conventions for editing bootstrap scripts and shell config in this dotfiles repo
+alwaysApply: true
+---
+
+# Dotfiles repository
+
+- Treat `install.sh`, `Brewfile.sh`, `macos.sh`, `node.sh`, and `code-repos.sh` as **machine bootstrap** scripts. Keep them POSIX-aware where they are `sh`/`bash`; `install.sh` is zsh.
+- After editing `zsh/` or `dotfiles/.zshrc`, ensure snippet **load order** stays `path` → `exports` → `aliases` → `functions` → `ps1` (see `dotfiles/.zshrc`).
+- Do not add global `git config` user identity to `install.sh`; use the symlinked `dotfiles/.gitconfig` only.
+- For Homebrew additions, prefer `brew install --cask` for GUI apps and `brew install` for CLI tools; verify names with `brew search`.
+- Do not commit credentials, `.env` files with secrets, or large binary artifacts.

@@ -18,3 +18,9 @@ echo "Removing old ~/${zshFile}"
 rm -f ~/${zshFile}
 echo "Symlinking ${zshFile} from ~/dotfiles/dotfiles directory"
 ln -s ${dotfilesDir}/${zshFile} ~/${zshFile}
+
+gitconfigFile=".gitconfig"
+echo "Removing old ~/${gitconfigFile}"
+rm -f ~/${gitconfigFile}
+echo "Symlinking ${gitconfigFile} from ~/dotfiles/dotfiles directory"
+ln -s "${dotfilesDir}/${gitconfigFile}" ~/${gitconfigFile}

@@ -1,17 +1,47 @@
-## Add gcloud to path (installed by brew)
-if [ -d '/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk' ]; then
-    source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc" 
-    source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc" 
+## Google Cloud SDK (Homebrew cask: gcloud-cli or legacy google-cloud-sdk)
+for gcloud_dir in \
+  "/opt/homebrew/Caskroom/gcloud-cli/latest/google-cloud-sdk" \
+  "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk" \
+  "/usr/local/Caskroom/gcloud-cli/latest/google-cloud-sdk" \
+  "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk"; do
+  if [ -r "${gcloud_dir}/path.zsh.inc" ]; then
+    # shellcheck source=/dev/null
+    source "${gcloud_dir}/path.zsh.inc"
+    # shellcheck source=/dev/null
+    [ -r "${gcloud_dir}/completion.zsh.inc" ] && source "${gcloud_dir}/completion.zsh.inc"
+    break
+  fi
+done
+
+## Homebrew first on Apple Silicon / Intel
+if [ -x /opt/homebrew/bin/brew ]; then
+  PATH="/opt/homebrew/bin:$PATH"
+elif [ -x /usr/local/bin/brew ]; then
+  PATH="/usr/local/bin:$PATH"
 fi
 
-## Ensure //opt/homebrew/bin before /usr/bin for Homebrew
-PATH="/opt/homebrew/bin:$PATH:~/.local/bin"
+PATH="$PATH:$HOME/.local/bin"
 
-## Add python
-PATH="$(brew --prefix)/opt/python@3.11/libexec/bin:$PATH"
+## Prefer Homebrew Python when installed (newest pin wins)
+if command -v brew >/dev/null 2>&1; then
+  _brew_prefix="$(brew --prefix)"
+  for pyver in 3.14 3.13 3.12 3.11; do
+    if [ -x "${_brew_prefix}/opt/python@${pyver}/libexec/bin/python3" ]; then
+      PATH="${_brew_prefix}/opt/python@${pyver}/libexec/bin:$PATH"
+      break
+    fi
+  done
+  unset _brew_prefix pyver
+fi
 
-## Put ~/bin before everything
-PATH="~/bin:$PATH"
+## pyenv (takes precedence over Homebrew Python when installed)
+if command -v pyenv >/dev/null 2>&1; then
+  export PYENV_ROOT="$HOME/.pyenv"
+  [[ ":$PATH:" != *":$PYENV_ROOT/bin:"* ]] && PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init -)"
+fi
+
+## Personal binaries
+PATH="$HOME/bin:$PATH"
 
 export PATH
-
